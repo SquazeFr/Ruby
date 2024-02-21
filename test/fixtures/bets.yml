@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  TeamA: MyString
+  TeamB: MyString
+  LogoA: MyText
+  LogoB: MyText
+  date: 2024-02-21 12:14:04
+  prediA: 1
+  prediB: 1
+  Desc: MyText
+
+two:
+  TeamA: MyString
+  TeamB: MyString
+  LogoA: MyText
+  LogoB: MyText
+  date: 2024-02-21 12:14:04
+  prediA: 1
+  prediB: 1
+  Desc: MyText
