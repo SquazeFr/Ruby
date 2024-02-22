@@ -3,10 +3,10 @@
   <div class="card-body">
     <h5 class="card-title"> <%= bet.TeamA%>  VS <%= bet.TeamB %> </h5> 
     <p class="card-text"> <%= bet.Desc %></p> 
-    <a href="#" class="btn btn-primary"><%= link_to "Voir le résultat", bet %></a>
-    <a href="#" class="btn btn-primary"><%= link_to "Retour à l'acceuil", bets_path %></a>
+    <%= link_to "Voir le résultat", bet %>
+    <%= link_to "Retour à l'acceuil", bets_path %>
+    <%= link_to "New bet", new_bet_path %>
   </div>
-  <%= link_to "New bet", new_bet_path %>
 </div>
 
 
