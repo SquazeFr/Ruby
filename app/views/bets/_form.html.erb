@@ -1,6 +1,6 @@
 <%= form_with(model: bet) do |form| %>
   <% if bet.errors.any? %>
-    <div style="color: red">
+    <div style="color: red; text-align: center">
       <h2><%= pluralize(bet.errors.count, "error") %> prohibited this bet from being saved:</h2>
 
       <ul>
@@ -11,47 +11,49 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :TeamA, style: "display: block" %>
-    <%= form.text_field :TeamA %>
-  </div>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :TeamA, style: "display: block; color: blue" %>
+      <%= form.text_field :TeamA %>
+    </div>
 
-  <div>
-    <%= form.label :TeamB, style: "display: block" %>
-    <%= form.text_field :TeamB %>
-  </div>
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :TeamB, style: "display: block; color: blue" %>
+      <%= form.text_field :TeamB %>
+    </div>
 
-  <div>
-    <%= form.label :LogoA, style: "display: block" %>
-    <%= form.text_area :LogoA %>
-  </div>
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :LogoA, style: "display: block; color: blue" %>
+      <%= form.text_area :LogoA %>
+    </div>
 
-  <div>
-    <%= form.label :LogoB, style: "display: block" %>
-    <%= form.text_area :LogoB %>
-  </div>
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :LogoB, style: "display: block; color: blue" %>
+      <%= form.text_area :LogoB %>
+    </div>
 
-  <div>
-    <%= form.label :date, style: "display: block" %>
-    <%= form.datetime_field :date %>
-  </div>
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :date, style: "display: block; color: blue" %>
+      <%= form.datetime_field :date %>
+    </div>
 
-  <div>
-    <%= form.label :prediA, style: "display: block" %>
-    <%= form.number_field :prediA %>
-  </div>
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :prediA, style: "display: block; color: blue" %>
+      <%= form.number_field :prediA %>
+    </div>
 
-  <div>
-    <%= form.label :prediB, style: "display: block" %>
-    <%= form.number_field :prediB %>
-  </div>
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :prediB, style: "display: block; color: blue" %>
+      <%= form.number_field :prediB %>
+    </div>
 
-  <div>
-    <%= form.label :Desc, style: "display: block" %>
-    <%= form.text_area :Desc %>
-  </div>
+    <div style="flex: 1 0 40%; margin: 10px;">
+      <%= form.label :Desc, style: "display: block; color: blue" %>
+      <%= form.text_area :Desc %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div style="width: 100%; text-align: center; margin: 10px;">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
